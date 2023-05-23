@@ -1,12 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 :root {
 	--b: 1px solid black;
 }
 * {
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 } 
 thead, tr, th, tbody, tr, td {
 	border: var(--b);
 }
+thead tr, tr:nth-child(even) {
+	background: #a3a3a3;
+}
+
 ul {
 	list-style-type: "- "; 
+}
+html {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+body {
+	width: 90%;
+	background-color: #dfdfdf;
+	/*background: linear-gradient(to right, #1687ED, #14375A);
+	background-image: url("") no-repeat;
+	background-position: bottom-right;
+	background-size: cover;*/
+}
+p {
+	width: 50%;
+	margin-left: calc(50% / 2);
+}
+strong, i, i>i.good, i>i.bad {
+	font-size: 1.6rem;
+	background-color: #b0b0b0;
+	border-left: 3px solid #000000;
+	padding-left: 30px;
+	margin: 80px 0;
+}
+i.good, i.bad, table strong {
+	margin: 0;
+	padding: 0!important;
+	font-size: 1rem;
+	background: none;
+	border: none!important;
+	font-style: normal;
+}
+i.good {
+	color: #7fe8af;
+}
+i.bad {
+	color: #e28585;
+}
+p.first {
+	font-weight: bold;
+}
+img {
+	float: left;
+	margin: 0 50px;
 }
