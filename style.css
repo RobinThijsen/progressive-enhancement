@@ -1,0 +1,12 @@
+:root {
+	--b: 1px solid black;
+}
+* {
+	box-sizing: border-box;
+} 
+thead, tr, th, tbody, tr, td {
+	border: var(--b);
+}
+ul {
+	list-style-type: "- "; 
+}
